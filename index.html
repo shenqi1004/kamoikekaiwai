@@ -1,8 +1,3 @@
-/** @jsxImportSource hono/jsx */ 
-import { Hono } from "hono";
-
-const app = new Hono();
-
 const Layout = ({ children, title }: { children: any; title: string }) => (
   <html lang="ja">
     <head>
@@ -103,7 +98,3 @@ app.get("/", (c) => {
   );
 });
 export default app; //
-
-import { serve } from "@hono/node-server";
-
-serve(app);
